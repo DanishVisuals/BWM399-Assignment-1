@@ -1,0 +1,91 @@
+//Sass Variables
+$primaryColor: #FF9F00;
+$secondaryColor: black;
+$accentColor: white;
+$baseWidth: 930px;
+$fontStack: Helvetica, sans-serif;
+
+
+
+
+body {
+    background-color: $primaryColor;
+    width: 960px;
+    margin: auto;
+    display: block;
+}
+
+header {
+    background-color: $secondaryColor;
+    width: $baseWidth;
+    height: 75px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: $accentColor;
+    text-align: center;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+}
+
+main {
+    background-color: $secondaryColor;
+    width: $baseWidth;
+    height: 500px;
+    margin: auto;
+    padding: 15px;
+    font: $fontStack;
+    
+}
+
+main h2 {
+    color: $accentColor;
+    font-size: 1.5em;
+    font-weight: bold;
+    clear: both;
+}
+
+main p {
+    color: $accentColor;
+    float: left;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-top: -140px;
+    margin-right: 100px;
+    float:right;
+}
+
+main ul li {
+    color: $accentColor;
+    display: list-item;
+    clear: both;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer {
+    background-color: $accentColor;
+    width: $baseWidth;
+    height: 45px;
+    margin: auto;
+    padding: 15px;
+    clear: both;
+}
+
+footer ul li {
+    display: inline;
+    margin: auto;
+    color: $primaryColor;
+    padding: 100px;
+}
