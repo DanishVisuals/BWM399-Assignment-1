@@ -1,7 +1,9 @@
 //Sass Variables
 $primaryColor: #FF9F00;
 $secondaryColor: black;
+$secondaryLight: lighten($secondaryColor, 10%);
 $accentColor: white;
+$accentDark: darken($accentColor, 20%);
 $baseWidth: 930px;
 $fontStack: Helvetica, sans-serif;
 
@@ -16,46 +18,23 @@ body {
 }
 
 header {
-    background-color: $secondaryColor;
+    background-color: $secondaryLight; //lighten function for secondary color
     width: $baseWidth;
     height: 75px;
     padding: 15px;
     margin: auto;
     margin-bottom: 20px;
-}
-
-header h1 {
+    h1 { //h1 tag nested in header
     font-size: 2em;
     font-weight: bold;
     color: $accentColor;
     text-align: center;
+    }
 }
 
 a {
     color: $primaryColor;
     text-decoration: none;
-}
-
-main {
-    background-color: $secondaryColor;
-    width: $baseWidth;
-    height: 500px;
-    margin: auto;
-    padding: 15px;
-    font: $fontStack;
-    
-}
-
-main h2 {
-    color: $accentColor;
-    font-size: 1.5em;
-    font-weight: bold;
-    clear: both;
-}
-
-main p {
-    color: $accentColor;
-    float: left;
 }
 
 img {
@@ -66,12 +45,34 @@ img {
     float:right;
 }
 
-main ul li {
+main {
+    background-color: $secondaryColor;
+    width: $baseWidth;
+    height: 500px;
+    margin: auto;
+    padding: 15px;
+    font: $fontStack;
+    
+    h2 { //h2 tag nested in main
+    color: $accentColor;
+    font-size: 1.5em;
+    font-weight: bold;
+    clear: both;
+}
+    
+
+    p { //p tag nested in main
+    color: $accentDark; //darken function for accent color
+    float: left;
+}
+
+    ul li { //ul and li nested in main
     color: $accentColor;
     display: list-item;
     clear: both;
     text-decoration: none;
     list-style: none;
+}
 }
 
 footer {
@@ -81,11 +82,12 @@ footer {
     margin: auto;
     padding: 15px;
     clear: both;
-}
 
-footer ul li {
+
+    ul li { //ul and li tag nested in footer
     display: inline;
     margin: auto;
     color: $primaryColor;
     padding: 100px;
+}
 }
