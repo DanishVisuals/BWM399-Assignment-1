@@ -7,8 +7,20 @@ $accentDark: darken($accentColor, 20%);
 $baseWidth: 930px;
 $fontStack: Helvetica, sans-serif;
 
-
-
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+    
+}
+//Extend feature
+area {
+    width: $baseWidth;
+    padding: 15px;
+    margin: auto;
+    
+}
 
 body {
     background-color: $primaryColor;
@@ -18,11 +30,9 @@ body {
 }
 
 header {
+    @extend area; //extend feature on header
     background-color: $secondaryLight; //lighten function for secondary color
-    width: $baseWidth;
     height: 75px;
-    padding: 15px;
-    margin: auto;
     margin-bottom: 20px;
     h1 { //h1 tag nested in header
     font-size: 2em;
@@ -46,13 +56,12 @@ img {
 }
 
 main {
+    @extend area; //extend feature on main
     background-color: $secondaryColor;
-    width: $baseWidth;
     height: 500px;
-    margin: auto;
-    padding: 15px;
     font: $fontStack;
-    
+    margin-bottom: 15px;
+    @include border-radius(10px); 
     h2 { //h2 tag nested in main
     color: $accentColor;
     font-size: 1.5em;
@@ -76,11 +85,9 @@ main {
 }
 
 footer {
+    @extend area; //extend feature on footer
     background-color: $accentColor;
-    width: $baseWidth;
     height: 45px;
-    margin: auto;
-    padding: 15px;
     clear: both;
 
 

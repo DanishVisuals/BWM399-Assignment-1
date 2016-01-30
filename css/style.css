@@ -1,3 +1,9 @@
+area, header, main, footer {
+  width: 930px;
+  padding: 15px;
+  margin: auto;
+}
+
 body {
   background-color: #FF9F00;
   width: 960px;
@@ -7,10 +13,7 @@ body {
 
 header {
   background-color: #1a1a1a;
-  width: 930px;
   height: 75px;
-  padding: 15px;
-  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -36,11 +39,13 @@ img {
 
 main {
   background-color: black;
-  width: 930px;
   height: 500px;
-  margin: auto;
-  padding: 15px;
   font: Helvetica, sans-serif;
+  margin-bottom: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
 
 main h2 {
@@ -65,10 +70,7 @@ main ul li {
 
 footer {
   background-color: white;
-  width: 930px;
   height: 45px;
-  margin: auto;
-  padding: 15px;
   clear: both;
 }
 
